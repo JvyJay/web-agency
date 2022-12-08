@@ -11,7 +11,125 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <h1>Next.js App</h1>
+      <main>
+        {/* HERO AREA */}
+        <section>
+          <div className='bg'></div>
+
+          <div className='text-content'>
+            <h1>Best Agency in The World</h1>
+            <p>Adipisicing id do aute culpa adipisicing culpa irure ullamco.</p>
+            <div className='button-container'>
+              <button>Start Project</button>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </section>
+
+        {/* SERVICES SECTION */}
+        <section>
+          <div className='top-section'>
+            <h6>Services</h6>
+            <h2>Custom E-Commerce, Mobile & Web Application Development</h2>
+            <p>
+              Aliquip cillum culpa cupidatat officia id do commodo mollit id
+              cillum elit anim excepteur. Duis magna elit voluptate consequat
+              incididunt nostrud fugiat elit in nulla consectetur deserunt ex.
+            </p>
+          </div>
+
+          <div className='card-container'>
+            <div className='top'>
+              <div>{/* Card */}</div>
+              <div>{/* Card */}</div>
+              <div>{/* Card */}</div>
+              <div>{/* Card */}</div>
+            </div>
+            <div className='bottom'>
+              <div>{/* Card Component */}</div>
+              <div>{/* Card Component */}</div>
+              <div>{/* Card Component */}</div>
+              <div>{/* Card Component */}</div>
+            </div>
+          </div>
+        </section>
+
+        {/* PORTFOLIO SECTION*/}
+        <section>
+          <div className='top-section'>
+            <h6>Portfolio</h6>
+            <h2>Our Recent Works</h2>
+            <p>
+              Aliquip cillum culpa cupidatat officia id do commodo mollit id
+              cillum elit anim excepteur. Duis magna elit voluptate consequat
+              incididunt nostrud fugiat elit in nulla consectetur deserunt ex.
+            </p>
+          </div>
+
+          <div className='bottom-section'>
+            <div className='portfolio-container'>
+              <div>{/* Project Component */}</div>
+              <div>{/* Project Component */}</div>
+              <div>{/* Project Component */}</div>
+            </div>
+
+            <button>See All Portfolio</button>
+          </div>
+        </section>
+
+        {/* TESTIMONIALS SECTION */}
+        <section>
+          <div className='top-section'>
+            <h2>Customer Testimonials</h2>
+            <p>
+              Aliquip cillum culpa cupidatat officia id do commodo mollit id
+              cillum elit anim excepteur.
+            </p>
+          </div>
+
+          <div className='testimonial-container'>
+            <div>{/* Testimonial Component */}</div>
+            <div>{/* Testimonial Component */}</div>
+            <div>{/* Testimonial Component */}</div>
+          </div>
+        </section>
+
+        {/* PROJECT INQUIRY SECTION */}
+        <section>
+          <div className='top-section'>
+            <div>{/* Left Blue Line */}</div>
+            <div>{/* Right Blue Line */}</div>
+            <h2>Mobile Solution: Targeted. Optimized. Integrated.</h2>
+            <p>
+              Aliquip cillum culpa cupidatat officia id do commodo mollit id
+              cillum elit anim excepteur.
+            </p>
+          </div>
+
+          <div>{/* Project Inquiry Component */}</div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section>
+          <div className='top-section'>
+            <h6>FAQ`s</h6>
+            <h2>Find The Answers You Need</h2>
+            <p>
+              Aliquip cillum culpa cupidatat officia id do commodo mollit id
+              cillum elit anim excepteur.
+            </p>
+          </div>
+
+          <div className='faq-container'>
+            <div>{/* Dropdown Box */}</div>
+            <div>{/* Dropdown Box */}</div>
+            <div>{/* Dropdown Box */}</div>
+            <div>{/* Dropdown Box */}</div>
+            <div>{/* Dropdown Box */}</div>
+          </div>
+        </section>
+      </main>
+      <footer>SandCastle Web Design & Development</footer>
     </div>
   );
 }

@@ -1,11 +1,14 @@
-import Link from 'next/link';
 import Nav from '../components/Nav';
 
 export default function contact() {
   return (
     <div>
       <Nav />
-      <h1>Contact</h1>
+      <main>
+        {/* CONTACT FORM SECTION */}
+        <div>{/* Form Component */}</div>
+      </main>
+      <footer>SandCastle Web Design & Development</footer>
     </div>
   );
 }
