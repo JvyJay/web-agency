@@ -1,8 +1,9 @@
 import Nav from '../components/Nav';
+import styles from '../styles/Start.module.css';
 
 export default function contact() {
   return (
-    <div>
+    <div className={styles.container}>
       <Nav />
       <main>
         {/* CONTACT FORM SECTION */}

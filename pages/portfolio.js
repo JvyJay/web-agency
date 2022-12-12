@@ -1,13 +1,14 @@
 import Nav from '../components/Nav';
+import styles from '../styles/Start.module.css';
 
 export default function portfolio() {
   return (
-    <div>
+    <div className={styles.container}>
       <Nav />
       <main>
         {/* HERO AREA SECTION */}
         <section>
-          <h1>Our Portfolio</h1>
+          <h1 class='text-3xl font-bold'>Our Portfolio</h1>
           <p>
             Eu ad dolore exercitation reprehenderit veniam anim Lorem duis
             laboris.
@@ -18,7 +19,7 @@ export default function portfolio() {
         <section>
           <div className='top-section'>
             <h6>Portfolio</h6>
-            <h2>Our Recent Works</h2>
+            <h2 class='text-2xl font-bold'>Our Recent Works</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
@@ -48,7 +49,9 @@ export default function portfolio() {
           <div className='top-section'>
             <div>{/* Left Blue Line */}</div>
             <div>{/* Right Blue Line */}</div>
-            <h2>Creative People. Custom Designs. Great Results</h2>
+            <h2 class='text-2xl font-bold'>
+              Creative People. Custom Designs. Great Results
+            </h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.

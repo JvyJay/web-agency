@@ -1,13 +1,14 @@
 import Nav from '../components/Nav';
+import styles from '../styles/Start.module.css';
 
 export default function about() {
   return (
-    <div>
+    <div className={styles.container}>
       <Nav />
       <main>
         {/* TEAM SECTION */}
         <section>
-          <h1>Our Team</h1>
+          <h1 class='text-3xl font-bold'>Our Team</h1>
           <div className='team-container'>
             <div>{/* Team Member Component*/}</div>
             <div>{/* Team Member Component*/}</div>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Start.module.css';
 import Nav from '../components/Nav';
 
-export default function Home() {
+export default function Start() {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +17,7 @@ export default function Home() {
           <div className='bg'></div>
 
           <div className='text-content'>
-            <h1>Best Agency in The World</h1>
+            <h1 class='text-3xl font-bold'>Best Agency in The World</h1>
             <p>Adipisicing id do aute culpa adipisicing culpa irure ullamco.</p>
             <div className='button-container'>
               <button>Start Project</button>
@@ -30,7 +30,9 @@ export default function Home() {
         <section>
           <div className='top-section'>
             <h6>Services</h6>
-            <h2>Custom E-Commerce, Mobile & Web Application Development</h2>
+            <h2 class='text-2xl font-bold'>
+              Custom E-Commerce, Mobile & Web Application Development
+            </h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
@@ -58,7 +60,7 @@ export default function Home() {
         <section>
           <div className='top-section'>
             <h6>Portfolio</h6>
-            <h2>Our Recent Works</h2>
+            <h2 class='text-2xl font-bold'>Our Recent Works</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
@@ -80,7 +82,7 @@ export default function Home() {
         {/* TESTIMONIALS SECTION */}
         <section>
           <div className='top-section'>
-            <h2>Customer Testimonials</h2>
+            <h2 class='text-2xl font-bold'>Customer Testimonials</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.
@@ -99,7 +101,9 @@ export default function Home() {
           <div className='top-section'>
             <div>{/* Left Blue Line */}</div>
             <div>{/* Right Blue Line */}</div>
-            <h2>Mobile Solution: Targeted. Optimized. Integrated.</h2>
+            <h2 class='text-2xl font-bold'>
+              Mobile Solution: Targeted. Optimized. Integrated.
+            </h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.
@@ -113,7 +117,7 @@ export default function Home() {
         <section>
           <div className='top-section'>
             <h6>FAQ`s</h6>
-            <h2>Find The Answers You Need</h2>
+            <h2 class='text-2xl font-bold'>Find The Answers You Need</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.

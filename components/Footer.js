@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+// Images
+
 export default function Footer() {
   return (
     <div className='footer-container'>
