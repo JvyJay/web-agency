@@ -1,9 +1,15 @@
 import React from 'react';
 
+// NEXT COMPONENTS
+import Image from 'next/image';
+
+// Images
+import img from '../assets/Sand2.jpg';
+
 export default function ProjectInquiry() {
   return (
     <div>
-      <image />
+      <Image alt='Sand Image' src={img} />
 
       <div>
         <h2>Do you have a project in mind?</h2>

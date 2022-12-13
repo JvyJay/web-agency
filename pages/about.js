@@ -1,6 +1,39 @@
 import Nav from '../components/Nav';
 import styles from '../styles/Start.module.css';
 
+const team_data = [
+  {
+    img: 'assets/david.jpg',
+    name: 'David Newsom',
+    position: 'Principal | Creative Director',
+    top_text: '',
+    bottom_text: '',
+    linkedin: '',
+    github: '',
+    email: '',
+  },
+  {
+    img: 'assets/ashlee.jpg',
+    name: 'Ashlee Bowlee',
+    position: 'Principal | Chief Technology Officer',
+    top_text: '',
+    bottom_text: '',
+    linkedin: '',
+    github: '',
+    email: '',
+  },
+  {
+    img: 'assets/brandon.jpg',
+    name: 'Brandon Wysocki',
+    position: 'Lead Developer',
+    top_text: '',
+    bottom_text: '',
+    linkedin: '',
+    github: '',
+    email: '',
+  },
+];
+
 export default function about() {
   return (
     <div className={styles.container}>

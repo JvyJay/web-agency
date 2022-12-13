@@ -1,6 +1,23 @@
 import Nav from '../components/Nav';
 import styles from '../styles/Start.module.css';
 
+const portfolio_data = [
+  { img: 'assets/medical-webdesign.png', title: 'Medical Website' },
+  {
+    img: 'assets/cryptocurrency-webdesign.png',
+    title: 'Cryptocurrency Website',
+  },
+  {
+    img: 'assets/bitcoin-investment-design.jpg',
+    title: 'Bitcoin Investment Web',
+  },
+  {
+    img: 'assets/home-investment-webdesign.avif',
+    title: 'Real Estate Website',
+  },
+  { img: 'assets/dental-webdesign.png', title: 'Dental Website' },
+];
+
 export default function portfolio() {
   return (
     <div className={styles.container}>

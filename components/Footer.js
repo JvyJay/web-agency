@@ -1,7 +1,13 @@
 import React from 'react';
+
+// NEXT COMPONENTS
 import Link from 'next/link';
 
+// NEXT COMPONENTS
+import Image from 'next/image';
+
 // Images
+import img from '../assets/logo_header.png';
 
 export default function Footer() {
   return (
@@ -9,7 +15,7 @@ export default function Footer() {
       <footer>
         {/* LEFT SIDE */}
         <div className='left'>
-          <image alt='logo' />
+          <image alt='logo' src={img} />
           <p>
             Esse enim qui tempor anim reprehenderit dolore veniam sint quis
             magna do est nisi.

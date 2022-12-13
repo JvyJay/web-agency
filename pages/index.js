@@ -1,6 +1,44 @@
+// NEXT COMPONENTS
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Start.module.css';
+
+// COMPONENTS
 import Nav from '../components/Nav';
+
+// IMAGES
+import img1 from '../assets/HeroArea.jpg';
+
+const service_data = [
+  { img: 'assets/web-design.png', title: 'Web Design' },
+  { img: 'assets/shopping-online.png', title: 'E-Commerce' },
+  { img: 'assets/app.png', title: 'Mobile Solutions' },
+  { img: 'assets/seo.png', title: 'Custom Development' },
+  { img: 'assets/blogging.png', title: 'Content Management Systems' },
+  { img: 'assets/computer.png', title: 'Hosting & Maintenance' },
+  { img: 'assets/communication.png', title: 'Strategy & Consulting' },
+  { img: 'assets/marketing.png', title: 'Online Marketing' },
+];
+
+const portfolio_data = [
+  { img: 'assets/real-estate-example.jpg', title: 'Real Estate LLC' },
+  { img: 'assets/real-estate-example-2.jpg', title: 'Real Estate Economy' },
+  { img: 'assets/real-estate-example3.avif', title: 'Just Real Estate' },
+];
+
+const testimonial_data = [
+  {
+    img: 'assets/jerome.jpg',
+    name: 'Jerome Bell',
+    position: 'Marketing Coordinator',
+  },
+  {
+    img: 'assets/cody.jpg',
+    name: 'Cody Fisher',
+    position: 'President of Sales',
+  },
+  { img: 'assets/robert.jpg', name: 'Robert Fox', position: 'Web Designer' },
+];
 
 export default function Start() {
   return (
@@ -14,10 +52,12 @@ export default function Start() {
       <main>
         {/* HERO AREA */}
         <section>
-          <div className='bg'></div>
+          <div className='bg'>
+            <Image alt='Hero Area' src={img1} />
+          </div>
 
           <div className='text-content'>
-            <h1 class='text-3xl font-bold'>Best Agency in The World</h1>
+            <h1 className='text-3xl font-bold'>Best Agency in The World</h1>
             <p>Adipisicing id do aute culpa adipisicing culpa irure ullamco.</p>
             <div className='button-container'>
               <button>Start Project</button>
