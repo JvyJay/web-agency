@@ -60,8 +60,18 @@ export default function Start() {
             <h1 className='text-3xl font-bold'>Best Agency in The World</h1>
             <p>Adipisicing id do aute culpa adipisicing culpa irure ullamco.</p>
             <div className='button-container'>
-              <button>Start Project</button>
-              <button>Learn More</button>
+              <button
+                type='button'
+                class='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'
+              >
+                Start Project
+              </button>
+              <button
+                type='button'
+                class='inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'
+              >
+                Learn More
+              </button>
             </div>
           </div>
         </section>
@@ -115,7 +125,9 @@ export default function Start() {
               <div>{/* Project Component */}</div>
             </div>
 
-            <button>See All Portfolio</button>
+            <button class='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'>
+              See All Portfolio
+            </button>
           </div>
         </section>
 
