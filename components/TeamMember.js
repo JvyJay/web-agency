@@ -1,32 +1,30 @@
 import React from 'react';
+import Image from 'next/image';
+
+import email from '../assets/email-send.svg';
+import linkedin from '../assets/Linkedin2.svg';
 
 export default function TeamMember(props) {
   return (
     <div>
-      <div className='top-section'>
-        <image alt='Team Member' src={props.name} />
-        <p>{props.topText}</p>
-      </div>
-
-      <div className='bottom-section'>
-        <p>{props.bottomText}</p>
-        <div className='links'>
-          <div>
-            <span>{props.phone}</span>
-            <span>{props.email}</span>
-          </div>
-          <div>
-            <image>
-              <a href={props.message}>{/* Social Icon */}</a>
-            </image>
-            <image>
-              <a href={props.linkedin}>{/* Social Icon */}</a>
-            </image>
-            <image>
-              <a href={props.github}>{/* Social Icon */}</a>
-            </image>
-          </div>
-        </div>
+      <div class='mb-12 lg:mb-0'>
+        <Image
+          class='rounded-lg shadow-lg mb-6 mx-auto'
+          src={props.img}
+          alt='avatar'
+          style='width: 150px'
+        />
+        <h5 class='text-lg font-bold mb-4'>{props.name}</h5>
+        <p class='mb-6'>{props.position}</p>
+        <p class='mb-6'>{props.desc}</p>
+        <ul class='list-inside flex mx-auto justify-center'>
+          <a href='#!' class='px-2'>
+            <Image alt='Email' src={email} />
+          </a>
+          <a href='#!' class='px-2'>
+            <Image alt='Linkedin' src={linkedin} />
+          </a>
+        </ul>
       </div>
     </div>
   );

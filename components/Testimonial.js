@@ -3,31 +3,37 @@ import Image from 'next/image';
 
 export default function Testimonial(props) {
   return (
-    <div class='flex justify-center'>
-      <div class='block rounded-lg shadow-lg bg-white max-w-sm text-center'>
-        <div class='py-3 px-6 border-b border-gray-300'>
-          <Image src={props.stars} alt='Star Rating' />
+    <div>
+      <div class='block rounded-lg shadow-lg bg-white'>
+        <div
+          class='overflow-hidden rounded-t-lg h-28'
+          style='background-color: #9d789b;'
+        ></div>
+        <div class='w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white'>
+          <Image src={props.img} alt='Avatar' />
         </div>
         <div class='p-6'>
-          <p class='text-gray-700 text-base mb-4'>
-            With supporting text below as a natural lead-in to additional
-            content.
+          <h4 class='text-2xl font-semibold mb-4'>{props.name}</h4>
+          <hr />
+          <p class='mt-4'>
+            <svg
+              aria-hidden='true'
+              focusable='false'
+              data-prefix='fas'
+              data-icon='quote-left'
+              class='w-6 pr-2 inline-block'
+              role='img'
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 512 512'
+            >
+              <path
+                fill='currentColor'
+                d='M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z'
+              ></path>
+            </svg>
+            Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing
+            elit.
           </p>
-          <button
-            type='button'
-            class=' inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out'
-          >
-            Button
-          </button>
-        </div>
-        <div class='py-3 px-6 border-t border-gray-300 text-gray-600'>
-          <div>
-            <Image src={props.img} alt='Avatar Image' />
-            <div>
-              <p>{props.name}</p>
-              <p>{props.position}</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
