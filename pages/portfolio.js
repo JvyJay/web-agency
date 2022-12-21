@@ -1,6 +1,10 @@
 import Nav from '../components/Nav';
 import styles from '../styles/Start.module.css';
 
+// Components
+import ProjectInquiry from '../components/ProjectInquiry';
+import Footer from '../components/Footer';
+
 const portfolio_data = [
   { img: 'assets/medical-webdesign.png', title: 'Medical Website' },
   {
@@ -20,7 +24,7 @@ const portfolio_data = [
 
 export default function portfolio() {
   return (
-    <div className={styles.container}>
+    <div>
       <Nav />
       <main>
         {/* HERO AREA SECTION */}
@@ -77,9 +81,9 @@ export default function portfolio() {
 
           <div>{/* Project Inquiry Component */}</div>
         </section>
-
-        <footer>SandCastle Web Design & Development</footer>
       </main>
+      <ProjectInquiry />
+      <Footer />
     </div>
   );
 }

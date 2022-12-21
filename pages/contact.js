@@ -3,7 +3,7 @@ import styles from '../styles/Start.module.css';
 
 export default function contact() {
   return (
-    <div className={styles.container}>
+    <div>
       <Nav />
       <main>
         {/* CONTACT FORM SECTION */}

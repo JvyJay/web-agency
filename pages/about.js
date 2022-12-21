@@ -1,6 +1,10 @@
 import Nav from '../components/Nav';
 import styles from '../styles/Start.module.css';
 
+// Components
+import ProjectInquiry from '../components/ProjectInquiry';
+import Footer from '../components/Footer';
+
 const team_data = [
   {
     img: 'assets/david.jpg',
@@ -32,7 +36,7 @@ const team_data = [
 
 export default function about() {
   return (
-    <div className={styles.container}>
+    <div>
       <Nav />
       <main>
         {/* TEAM SECTION */}
@@ -60,7 +64,8 @@ export default function about() {
           <div>{/* Project Inquiry Component */}</div>
         </section>
       </main>
-      <footer>SandCastle Web Design & Development</footer>
+      <ProjectInquiry />
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,11 @@ import Image from 'next/image';
 
 // COMPONENTS
 import Nav from '../components/Nav';
+import ServiceCard from '../components/ServiceCard';
+import PortfolioCard from '../components/PortfolioCard';
+import Testimonial from '../components/Testimonial';
+import ProjectInquiry from '../components/ProjectInquiry';
+import Footer from '../components/Footer';
 
 // IMAGES
 import img1 from '../assets/HeroArea.jpg';
@@ -174,7 +179,7 @@ export default function Start() {
             </p>
           </div>
 
-          <div>{/* Project Inquiry Component */}</div>
+          <ProjectInquiry />
         </section>
 
         {/* FAQ SECTION */}
@@ -197,7 +202,7 @@ export default function Start() {
           </div>
         </section>
       </main>
-      <footer>SandCastle Web Design & Development</footer>
+      <Footer />
     </div>
   );
 }
