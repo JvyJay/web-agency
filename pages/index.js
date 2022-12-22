@@ -58,32 +58,32 @@ export default function Start() {
         <section>
           <div
             style={{ height: '617px' }}
-            class='relative h-screen overflow-hidden'
+            className='relative h-screen overflow-hidden'
           >
             <Image
               alt='Hero Area'
               src={img1}
-              class='absolute object-cover w-full h-full'
+              className='absolute object-cover w-full h-full'
             />
-            <div class='absolute inset-0 bg-black opacity-25'></div>
-            <div class='container relative z-10 flex items-center w-4/5 py-16 mx-auto rounded-lg md:my-32'>
-              <div class='relative z-10 flex flex-col items-center w-full'>
+            <div className='absolute inset-0 bg-black opacity-25'></div>
+            <div className='container relative z-10 flex items-center w-4/5 py-16 mx-auto rounded-lg md:my-32'>
+              <div className='relative z-10 flex flex-col items-center w-full'>
                 <h1 className='text-3xl font-bold my-5'>
                   Best Agency in The World
                 </h1>
-                <p className=''>
+                <p>
                   Adipisicing id do aute culpa adipisicing culpa irure ullamco.
                 </p>
                 <div className='my-5 flex justify-between'>
                   <button
                     type='button'
-                    class='inline-block px-6 mx-2.5 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'
+                    className='inline-block px-6 mx-2.5 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Start Project
                   </button>
                   <button
                     type='button'
-                    class='inline-block px-6 mx-2.5 py-2.5 bg-gray-200 text-blue-400 border-blue-400 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out'
+                    className='inline-block px-6 mx-2.5 py-2.5 bg-gray-200 text-blue-400 border-blue-400 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out'
                   >
                     Learn More
                   </button>
@@ -97,7 +97,7 @@ export default function Start() {
         <section>
           <div className='top-section'>
             <h6>Services</h6>
-            <h2 class='text-2xl font-bold'>
+            <h2 className='text-2xl font-bold'>
               Custom E-Commerce, Mobile & Web Application Development
             </h2>
             <p>
@@ -127,7 +127,7 @@ export default function Start() {
         <section>
           <div className='top-section'>
             <h6>Portfolio</h6>
-            <h2 class='text-2xl font-bold'>Our Recent Works</h2>
+            <h2 className='text-2xl font-bold'>Our Recent Works</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
@@ -142,7 +142,7 @@ export default function Start() {
               <div>{/* Project Component */}</div>
             </div>
 
-            <button class='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'>
+            <button className='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'>
               See All Portfolio
             </button>
           </div>
@@ -151,7 +151,7 @@ export default function Start() {
         {/* TESTIMONIALS SECTION */}
         <section>
           <div className='top-section'>
-            <h2 class='text-2xl font-bold'>Customer Testimonials</h2>
+            <h2 className='text-2xl font-bold'>Customer Testimonials</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.
@@ -186,7 +186,7 @@ export default function Start() {
         <section>
           <div className='top-section'>
             <h6>FAQ`s</h6>
-            <h2 class='text-2xl font-bold'>Find The Answers You Need</h2>
+            <h2 className='text-2xl font-bold'>Find The Answers You Need</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur.
