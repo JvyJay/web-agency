@@ -12,6 +12,8 @@ import Footer from '../components/Footer';
 
 // IMAGES
 import img1 from '../assets/HeroArea.jpg';
+
+// Service Card Icons
 import webDesign from '../assets/web-design.png';
 import shoppingOnline from '../assets/shopping-online.png';
 import app from '../assets/app.png';
@@ -20,6 +22,11 @@ import blogging from '../assets/blogging.png';
 import computer from '../assets/computer.png';
 import communication from '../assets/communication.png';
 import marketing from '../assets/marketing.png';
+
+// Portfolio Images
+import portfolioImg1 from '../assets/real-estate-example.jpg';
+import portfolioImg2 from '../assets/real-estate-example-2.jpg';
+import portfolioImg3 from '../assets/real-estate-example3.avif';
 
 const service_data = [
   { img: webDesign, title: 'Web Design', key: 0 },
@@ -41,9 +48,17 @@ const service_data = [
 ];
 
 const portfolio_data = [
-  { img: 'assets/real-estate-example.jpg', title: 'Real Estate LLC' },
-  { img: 'assets/real-estate-example-2.jpg', title: 'Real Estate Economy' },
-  { img: 'assets/real-estate-example3.avif', title: 'Just Real Estate' },
+  { img: portfolioImg1, title: 'Real Estate LLC', key: 0 },
+  {
+    img: portfolioImg2,
+    title: 'Real Estate Economy',
+    key: 1,
+  },
+  {
+    img: portfolioImg3,
+    title: 'Just Real Estate',
+    key: 2,
+  },
 ];
 
 const testimonial_data = [
@@ -123,18 +138,10 @@ export default function Start() {
             </p>
           </div>
 
-          <div className='card-container'>
-            <div className='top'>
-              {service_data.map((e) => {
-                return <ServiceCard key={e.key} img={e.img} title={e.title} />;
-              })}
-            </div>
-            <div className='bottom'>
-              <div>{/* Card Component */}</div>
-              <div>{/* Card Component */}</div>
-              <div>{/* Card Component */}</div>
-              <div>{/* Card Component */}</div>
-            </div>
+          <div>
+            {service_data.map((e) => {
+              return <ServiceCard key={e.key} img={e.img} title={e.title} />;
+            })}
           </div>
         </section>
 
@@ -151,10 +158,12 @@ export default function Start() {
           </div>
 
           <div className='bottom-section'>
-            <div className='portfolio-container'>
-              <div>{/* Project Component */}</div>
-              <div>{/* Project Component */}</div>
-              <div>{/* Project Component */}</div>
+            <div>
+              {portfolio_data.map((e) => {
+                return (
+                  <PortfolioCard key={e.key} img={e.img} title={e.title} />
+                );
+              })}
             </div>
 
             <button className='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'>

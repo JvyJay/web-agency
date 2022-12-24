@@ -6,20 +6,23 @@ import ProjectInquiry from '../components/ProjectInquiry';
 import Footer from '../components/Footer';
 
 const portfolio_data = [
-  { img: 'assets/medical-webdesign.png', title: 'Medical Website' },
+  { img: 'assets/medical-webdesign.png', title: 'Medical Website', key: 0 },
   {
     img: 'assets/cryptocurrency-webdesign.png',
     title: 'Cryptocurrency Website',
+    key: 1,
   },
   {
     img: 'assets/bitcoin-investment-design.jpg',
     title: 'Bitcoin Investment Web',
+    key: 2,
   },
   {
     img: 'assets/home-investment-webdesign.avif',
     title: 'Real Estate Website',
+    key: 3,
   },
-  { img: 'assets/dental-webdesign.png', title: 'Dental Website' },
+  { img: 'assets/dental-webdesign.png', title: 'Dental Website', key: 4 },
 ];
 
 export default function portfolio() {
