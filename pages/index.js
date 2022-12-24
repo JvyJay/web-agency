@@ -125,8 +125,8 @@ export default function Start() {
         </section>
 
         {/* SERVICES SECTION */}
-        <section>
-          <div className='top-section'>
+        <section className='container mx-auto px-4'>
+          <div>
             <h6>Services</h6>
             <h2 className='text-2xl font-bold'>
               Custom E-Commerce, Mobile & Web Application Development
@@ -138,7 +138,7 @@ export default function Start() {
             </p>
           </div>
 
-          <div>
+          <div class='container flex justify-center flex-row flex-wrap '>
             {service_data.map((e) => {
               return <ServiceCard key={e.key} img={e.img} title={e.title} />;
             })}
@@ -146,8 +146,8 @@ export default function Start() {
         </section>
 
         {/* PORTFOLIO SECTION*/}
-        <section>
-          <div className='top-section'>
+        <section className='container mx-auto px-4'>
+          <div>
             <h6>Portfolio</h6>
             <h2 className='text-2xl font-bold'>Our Recent Works</h2>
             <p>
@@ -157,8 +157,8 @@ export default function Start() {
             </p>
           </div>
 
-          <div className='bottom-section'>
-            <div>
+          <div>
+            <div class='flex justify-center flex-row flex-wraps'>
               {portfolio_data.map((e) => {
                 return (
                   <PortfolioCard key={e.key} img={e.img} title={e.title} />
@@ -173,8 +173,8 @@ export default function Start() {
         </section>
 
         {/* TESTIMONIALS SECTION */}
-        <section>
-          <div className='top-section'>
+        <section className='container mx-auto px-4'>
+          <div>
             <h2 className='text-2xl font-bold'>Customer Testimonials</h2>
             <p>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
@@ -191,7 +191,7 @@ export default function Start() {
 
         {/* PROJECT INQUIRY SECTION */}
         <section>
-          <div className='top-section'>
+          <div className='container mx-auto px-4'>
             <div>{/* Left Blue Line */}</div>
             <div>{/* Right Blue Line */}</div>
             <h2 class='text-2xl font-bold'>
@@ -207,8 +207,8 @@ export default function Start() {
         </section>
 
         {/* FAQ SECTION */}
-        <section>
-          <div className='top-section'>
+        <section className='container mx-auto px-4'>
+          <div>
             <h6>FAQ`s</h6>
             <h2 className='text-2xl font-bold'>Find The Answers You Need</h2>
             <p>

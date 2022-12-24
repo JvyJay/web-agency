@@ -3,9 +3,15 @@ import Image from 'next/image';
 
 export default function ServiceCard(props) {
   return (
-    <div class='flex justify-center text-center'>
-      <div class='block p-6 rounded-lg shadow-lg bg-white max-w-sm'>
-        <Image width='100' height='100' alt='Icon' src={props.img} />
+    <div>
+      <div class='flex justify-center flex-col text-center m-5 items-center p-6 rounded-lg shadow-lg bg-white max-w-sm'>
+        <Image
+          class='text-center'
+          width='50'
+          height='100'
+          alt='Icon'
+          src={props.img}
+        />
         <h5 class='text-gray-900 text-xl leading-tight font-medium mb-2'>
           {props.title}
         </h5>

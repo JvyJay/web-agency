@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 export default function PortfolioCard(props) {
   return (
-    <div class='flex justify-center'>
-      <div class='rounded-lg shadow-lg bg-white max-w-sm'>
+    <div>
+      <div class='flex justify-center flex-col text-center m-5  rounded-lg shadow-lg bg-white max-w-sm'>
         <a href='#!'>
           <Image
             width='100'
             height='100'
-            class='rounded-t-lg'
+            class='rounded-t-lg w-full'
             src={props.img}
             alt='Portfolio Image'
           />

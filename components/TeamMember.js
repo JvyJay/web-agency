@@ -18,10 +18,10 @@ export default function TeamMember(props) {
         <p class='mb-6'>{props.position}</p>
         <p class='mb-6'>{props.desc}</p>
         <ul class='list-inside flex mx-auto justify-center'>
-          <a href='#!' class='px-2'>
+          <a href={props.email} class='px-2'>
             <Image alt='Email' src={email} />
           </a>
-          <a href='#!' class='px-2'>
+          <a href={props.linkedin} class='px-2'>
             <Image alt='Linkedin' src={linkedin} />
           </a>
         </ul>
