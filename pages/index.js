@@ -12,16 +12,32 @@ import Footer from '../components/Footer';
 
 // IMAGES
 import img1 from '../assets/HeroArea.jpg';
+import webDesign from '../assets/web-design.png';
+import shoppingOnline from '../assets/shopping-online.png';
+import app from '../assets/app.png';
+import seo from '../assets/seo.png';
+import blogging from '../assets/blogging.png';
+import computer from '../assets/computer.png';
+import communication from '../assets/communication.png';
+import marketing from '../assets/marketing.png';
 
 const service_data = [
-  { img: 'assets/web-design.png', title: 'Web Design' },
-  { img: 'assets/shopping-online.png', title: 'E-Commerce' },
-  { img: 'assets/app.png', title: 'Mobile Solutions' },
-  { img: 'assets/seo.png', title: 'Custom Development' },
-  { img: 'assets/blogging.png', title: 'Content Management Systems' },
-  { img: 'assets/computer.png', title: 'Hosting & Maintenance' },
-  { img: 'assets/communication.png', title: 'Strategy & Consulting' },
-  { img: 'assets/marketing.png', title: 'Online Marketing' },
+  { img: webDesign, title: 'Web Design', key: 0 },
+  { img: shoppingOnline, title: 'E-Commerce', key: 1 },
+  { img: app, title: 'Mobile Solutions', key: 2 },
+  { img: seo, title: 'Custom Development', key: 3 },
+  {
+    img: blogging,
+    title: 'Content Management Systems',
+    key: 4,
+  },
+  { img: computer, title: 'Hosting & Maintenance', key: 5 },
+  {
+    img: communication,
+    title: 'Strategy & Consulting',
+    key: 6,
+  },
+  { img: marketing, title: 'Online Marketing', key: 7 },
 ];
 
 const portfolio_data = [
@@ -68,7 +84,7 @@ export default function Start() {
             <div className='absolute inset-0 bg-black opacity-25'></div>
             <div className='container relative z-10 flex items-center w-4/5 py-16 mx-auto rounded-lg md:my-32'>
               <div className='relative z-10 flex flex-col items-center w-full'>
-                <h1 className='text-3xl font-bold my-5'>
+                <h1 className='text-5xl font-bold my-5'>
                   Best Agency in The World
                 </h1>
                 <p>
@@ -109,10 +125,9 @@ export default function Start() {
 
           <div className='card-container'>
             <div className='top'>
-              <div>{/* Card */}</div>
-              <div>{/* Card */}</div>
-              <div>{/* Card */}</div>
-              <div>{/* Card */}</div>
+              {service_data.map((e) => {
+                return <ServiceCard key={e.key} img={e.img} title={e.title} />;
+              })}
             </div>
             <div className='bottom'>
               <div>{/* Card Component */}</div>

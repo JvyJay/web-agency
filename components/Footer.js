@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div className='mx-6 py-10 text-center md:text-left'>
           <div className='flex flex-row justify-between'>
-            <Image className='mb-4' src={img} alt='Logo' />
+            <Image src={img} alt='Logo' />
             <div className='flex flex-column gap-4'>
               <div>
                 <h6 className='uppercase font-semibold mb-4 flex justify-center md:justify-start'>
@@ -76,7 +76,7 @@ export default function Footer() {
             className='text-gray-600 font-semibold'
             href='https://tailwind-elements.com/'
           >
-            Tailwind Elements
+            Sandcastle Web Design & Development
           </a>
         </div>
       </footer>
