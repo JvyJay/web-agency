@@ -10,15 +10,15 @@ export default function ProjectInquiry() {
   return (
     <div>
       <div
-        className='relative overflow-hidden bg-no-repeat bg-cover'
+        className='relative overflow-hidden bg-no-repeat bg-cover container mx-auto px-4 my-10'
         style={{
           backgroundPosition: '100%',
           height: '400px',
         }}
       >
         <div
-          className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed'
-          style={{ backgroundColor: '#1FAED0' }}
+          className='absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-blue-400'
+          // style={{ backgroundColor: '#1FAED0' }}
         >
           <div className='flex justify-center items-center h-full'>
             <div className='text-center text-white px-6 md:px-12'>

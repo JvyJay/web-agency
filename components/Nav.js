@@ -13,7 +13,7 @@ export default function Nav() {
           <div className='container-fluid'>
             <div className='flex items-center mt-2 lg:mt-0 mr-1' href='#'>
               <Link href='/'>
-                <Image src={img} alt='' loading='lazy' />
+                <Image src={img} alt='Logo' loading='lazy' />
               </Link>
             </div>
           </div>
