@@ -1,8 +1,6 @@
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import styles from '../styles/Start.module.css';
-
-// Component
-import Form from '../components/Form';
 
 export default function contact() {
   return (
@@ -164,7 +162,7 @@ export default function contact() {
           </form>
         </div>
       </main>
-      <footer>SandCastle Web Design & Development</footer>
+      <Footer />
     </div>
   );
 }
