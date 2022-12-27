@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Testimonial(props) {
   return (
-    <div className='px-4'>
+    <div className='px-4 my-10'>
       <div class='block rounded-lg shadow-lg bg-white'>
         <div
           class='overflow-hidden rounded-t-lg h-28'

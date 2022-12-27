@@ -79,14 +79,14 @@ export default function Start() {
         <section>
           <div
             style={{ height: '617px' }}
-            className='relative h-screen overflow-hidden'
+            className='relative h-screen h-full h-auto overflow-hidden'
           >
             <Image
               alt='Hero Area'
               src={img1}
-              className='absolute object-cover w-full h-full'
+              className='absolute object-cover w-full h-full h-auto'
             />
-            <div className='absolute inset-0 bg-black opacity-25'></div>
+            {/* <div className='absolute inset-0 bg-black opacity-25'></div> */}
             <div className='container relative z-10 flex items-center w-4/5 py-16 mx-auto rounded-lg md:my-32'>
               <div className='relative z-10 flex flex-col items-center w-full'>
                 <h1 className='text-4xl font-semibold my-5'>
@@ -198,7 +198,7 @@ export default function Start() {
         {/* FAQ SECTION */}
         <section className='container mx-auto px-4 my-10 text-center'>
           <div>
-            <h6>FAQ`s</h6>
+            <h6 className='text-blue-400 font-bold'>FAQ`s</h6>
             <h2 className='text-2xl font-semibold'>
               Find The Answers You Need
             </h2>

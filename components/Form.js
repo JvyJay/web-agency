@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Form() {
+export default function FormComp() {
   return (
     <div>
       <div className='left'>
@@ -9,13 +9,6 @@ export default function Form() {
         <i></i>
         <i></i>
         <i></i>
-
-        <div>
-          <image />
-          <image />
-          <image />
-          <image />
-        </div>
       </div>
       <div className='right'>
         <form>
