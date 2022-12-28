@@ -5,18 +5,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 // NEXT COMPONENTS
 
-// Images
+// IMAGES
 import img from '../assets/logo_header.png';
 import linkedin from '../assets/linkedin2.svg';
 import behance from '../assets/behance.svg';
 import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
+// IMAGES
 
 export default function Footer() {
   return (
     <div>
       <footer className='text-center lg:text-left bg-gray-100 text-gray-600'>
-        <div className='flex justify-start items-start p-6 border-b border-gray-300'></div>
+        {/* <div className='flex justify-start items-start p-6 border-b border-gray-300'></div> */}
         <div className='mx-6 py-10 text-center md:text-left'>
           <div className='flex flex-row justify-between'>
             <div
@@ -107,6 +108,7 @@ export default function Footer() {
             className='text-gray-600 font-semibold'
             href='https://tailwind-elements.com/'
           >
+            {' '}
             Sandcastle Web Design & Development
           </a>
         </div>
