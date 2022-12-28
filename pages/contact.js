@@ -1,14 +1,73 @@
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import styles from '../styles/Start.module.css';
+import Image from 'next/image';
+
+// ICONS
+import icon1 from '../assets/phone.svg';
+import icon2 from '../assets/email.svg';
+import icon3 from '../assets/location.svg';
+// ICONS
+
+// IMAGES
+import img from '../assets/logo_header.png';
+import linkedin from '../assets/linkedin2.svg';
+import behance from '../assets/behance.svg';
+import twitter from '../assets/twitter.svg';
+import youtube from '../assets/youtube.svg';
+// IMAGES
 
 export default function contact() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Nav />
-      <main>
+      <main className='flex justify-center'>
         {/* CONTACT FORM SECTION */}
-        <div class='block p-6 rounded-lg shadow-lg bg-white max-w-md'>
+        <div class='p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-row justify-between my-10'>
+          <div className='flex flex-col justify-between flex-start'>
+            <div className='p-6'>
+              <h1 class='text-3xl font-bold mb-5'>Now Start Your Project</h1>
+              <p className='mb-5'>
+                Id deserunt cillum nostrud incididunt laboris amet quis.
+              </p>
+              <ul>
+                <li className='flex flex-row mb-4'>
+                  <Image className='mr-2' alt='Phone' src={icon1} />
+                  206.325.5383
+                </li>
+                <li className='flex flex-row mb-4'>
+                  <Image className='mr-2' alt='Email' src={icon2} />
+                  info@sandcastle-web.com
+                </li>
+                <li className='flex flex-row mb-4'>
+                  <Image className='mr-2' alt='Location' src={icon3} />
+                  Seattle, WA
+                </li>
+              </ul>
+            </div>
+            <ul className='flex flex-row p-6'>
+              <li className='mr-2'>
+                <a>
+                  <Image src={linkedin} alt='LinkedIn' />
+                </a>
+              </li>
+              <li className='mr-2'>
+                <a>
+                  <Image src={behance} alt='Behance' />
+                </a>
+              </li>
+              <li className='mr-2'>
+                <a>
+                  <Image src={twitter} alt='Twitter' />
+                </a>
+              </li>
+              <li className='mr-2'>
+                <a>
+                  <Image src={youtube} alt='YouTube' />
+                </a>
+              </li>
+            </ul>
+          </div>
           <form>
             <div class='form-group mb-6'>
               <input
@@ -121,20 +180,6 @@ export default function contact() {
                 rows='3'
                 placeholder='Message'
               ></textarea>
-            </div>
-            <div class='form-group form-check text-center mb-6'>
-              <input
-                type='checkbox'
-                class='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer'
-                id='exampleCheck87'
-                checked
-              />
-              <label
-                class='form-check-label inline-block text-gray-800'
-                for='exampleCheck87'
-              >
-                Send me a copy of this message
-              </label>
             </div>
             <button
               type='submit'
