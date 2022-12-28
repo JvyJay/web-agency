@@ -4,11 +4,9 @@ import Image from 'next/image';
 export default function PortfolioCard(props) {
   return (
     <div>
-      <div class='flex justify-center flex-col text-center m-5  rounded-lg shadow-lg bg-white max-w-sm'>
-        <a href='#!'>
+      <div class='flex justify-center flex-col text-center m-5 rounded-lg shadow-lg bg-white max-w-sm'>
+        <a href='#!' className='h-40 bg-cover overflow-hidden'>
           <Image
-            width='100'
-            height='100'
             class='rounded-t-lg w-full'
             src={props.img}
             alt='Portfolio Image'

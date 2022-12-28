@@ -18,12 +18,12 @@ const portfolio_data = [
   { img: portfolio1, title: 'Medical Website', key: 0 },
   {
     img: portfolio2,
-    title: 'Cryptocurrency Website',
+    title: 'Crypto Website',
     key: 1,
   },
   {
     img: portfolio3,
-    title: 'Bitcoin Investment Web',
+    title: 'Bitcoin Website',
     key: 2,
   },
   {
@@ -36,22 +36,21 @@ const portfolio_data = [
 
 export default function portfolio() {
   return (
-    <div>
+    <div className='font-montserrat text-neutral-800'>
       <Nav />
       <main>
         {/* PORTFOLIO SECTION*/}
         <section className='text-center my-10 px-4 container mx-auto'>
-          <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
             <h6 className='text-blue-400 font-bold'>Portfolio</h6>
             <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
-            <p>
+            <p className='w-3/6 font-light mb-4'>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
               incididunt nostrud fugiat elit in nulla consectetur deserunt ex.
             </p>
           </div>
-
-          <div className='flex justify-center flex-row flex-wraps'>
+          <div className='flex justify-center flex-row flex-wraps mx-auto'>
             {portfolio_data.map((e) => {
               return <PortfolioCard key={e.key} img={e.img} title={e.title} />;
             })}
@@ -59,11 +58,11 @@ export default function portfolio() {
         </section>
 
         {/* PROJECT INQUIRY SECTION */}
-        <section className='mt-10'>
-          <div className='container mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
+        <section className='mt-10 mx-auto'>
+          <div className='px-4 flex flex-col justify-center items-center text-center text-blue-400'>
             <div className='flex flex-row justify-center items-center'>
-              <hr className='w-48 h-1 bg-blue-400 rounded border-0  mx-4'></hr>
-              <h2 class='text-2xl font-semibold font-courgette '>
+              <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>
+              <h2 class='text-2xl font-semibold font-courgette'>
                 Creative People. Custom Designs. Great Results.
               </h2>
               <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>

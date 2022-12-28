@@ -19,11 +19,14 @@ export default function Nav() {
           </div>
           <div className='flex relative'>
             <ul className='navbar-nav flex flex-row pl-0 list-style-none mr-auto right-0 items-center content-center justify-self-center'>
-              <li className='nav-item px-5 hover:text-blue-500 focus:text-blue-500'>
-                <Link href='/about'>Who We Are{'    '}</Link>
+              <li className='nav-item pr-5 hover:text-blue-500 focus:text-blue-500'>
+                <Link href='/'>Home{'    '}</Link>
               </li>
               <li className='nav-item pr-5 hover:text-blue-500 focus:text-blue-500'>
-                <Link href='/portfolio'>What We`ve Done{'    '}</Link>
+                <Link href='/about'>About{'    '}</Link>
+              </li>
+              <li className='nav-item pr-5 hover:text-blue-500 focus:text-blue-500'>
+                <Link href='/portfolio'>Portfolio{'    '}</Link>
               </li>
               <li className='nav-item pr-5 hover:text-blue-500 focus:text-blue-500'>
                 <Link href='/contact'>Let`s Get Started{'    '}</Link>

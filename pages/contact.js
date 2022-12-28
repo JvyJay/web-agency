@@ -4,7 +4,7 @@ import styles from '../styles/Start.module.css';
 
 export default function contact() {
   return (
-    <div>
+    <div className='font-montserrat text-neutral-800'>
       <Nav />
       <main>
         {/* CONTACT FORM SECTION */}

@@ -53,18 +53,23 @@ export default function Footer() {
                   Menu
                 </h6>
                 <p className='mb-4'>
+                  <Link href='/' class='text-gray-600'>
+                    Home
+                  </Link>
+                </p>
+                <p className='mb-4'>
                   <Link href='/about' class='text-gray-600'>
-                    Who We Are
+                    About
                   </Link>
                 </p>
                 <p className='mb-4'>
                   <Link href='/portfolio' class='text-gray-600'>
-                    What We`ve Done
+                    Portfolio
                   </Link>
                 </p>
                 <p>
                   <Link href='/contact' className='text-gray-600'>
-                    Let`s get Started
+                    Contact
                   </Link>
                 </p>
               </div>
@@ -72,6 +77,10 @@ export default function Footer() {
                 <h6 className='uppercase font-semibold mb-4 flex justify-center md:justify-start'>
                   Subscribe To Our Newsletter
                 </h6>
+
+                <p class='text-gray-500 mb-4'>
+                  We will write rarely and only high-quality content.
+                </p>
 
                 <div class='md:flex flex-col'>
                   <input

@@ -140,7 +140,7 @@ export default function Start() {
           <div className='flex flex-col justify-center items-center text-center'>
             <h6 className='text-blue-400 font-bold'>Portfolio</h6>
             <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
-            <p className='w-4/6 font-light mb-4'>
+            <p className='w-4/6 font-light mb-5'>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
               cillum elit anim excepteur. Duis magna elit voluptate consequat
               incididunt nostrud fugiat elit in nulla consectetur deserunt ex.

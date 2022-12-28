@@ -45,7 +45,7 @@ const team_data = [
 
 export default function about() {
   return (
-    <div>
+    <div className='font-montserrat text-neutral-800'>
       <Nav />
       <main>
         {/* TEAM SECTION */}
