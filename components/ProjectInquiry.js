@@ -1,15 +1,9 @@
 import React from 'react';
 
-// NEXT COMPONENTS
-import Image from 'next/image';
-
-// Images
-import img from '../assets/Sand2.jpg';
-
 export default function ProjectInquiry() {
   return (
     <div
-      className='relative overflow-hidden bg-no-repeat bg-cover container mx-auto px-4 mt-10'
+      className='relative overflow-hidden bg-no-repeat bg-cover container mx-auto px-4 mt-10 w-full'
       style={{
         backgroundPosition: '100%',
         height: '400px',
@@ -32,7 +26,7 @@ export default function ProjectInquiry() {
             </h3>
             <button
               type='button'
-              class='inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'
+              className='inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out'
               data-mdb-ripple='true'
               data-mdb-ripple-color='light'
             >

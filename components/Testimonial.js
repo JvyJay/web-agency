@@ -4,24 +4,24 @@ import Image from 'next/image';
 export default function Testimonial(props) {
   return (
     <div className='px-4 my-10'>
-      <div class='block rounded-lg shadow-lg bg-white'>
+      <div className='block rounded-lg shadow-lg bg-white'>
         <div
-          class='overflow-hidden rounded-t-lg h-28'
+          className='overflow-hidden rounded-t-lg h-28'
           style={{ backgroundColor: '#9d789b' }}
         ></div>
-        <div class='w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white'>
-          <Image width='100' height='100' src={props.img} alt='Avatar' />
+        <div className='w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white'>
+          <Image src={props.img} alt='Avatar' />
         </div>
-        <div class='p-6'>
-          <h4 class='text-2xl font-semibold mb-4'>{props.name}</h4>
+        <div className='p-6'>
+          <h4 className='text-2xl font-semibold mb-4'>{props.name}</h4>
           <hr />
-          <p class='mt-4 font-light'>
+          <p className='mt-4 font-light'>
             <svg
               aria-hidden='true'
               focusable='false'
               data-prefix='fas'
               data-icon='quote-left'
-              class='w-6 pr-2 inline-block'
+              className='w-6 pr-2 inline-block'
               role='img'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 512 512'
@@ -34,14 +34,14 @@ export default function Testimonial(props) {
             Lorem ipsum dolor sit amet eos adipisci, consectetur adipisicing
             elit.
           </p>
-          <ul class='flex justify-center mb-0'>
+          <ul className='flex justify-center mb-0'>
             <li>
               <svg
                 aria-hidden='true'
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                class='w-4 text-yellow-500'
+                className='w-4 text-yellow-500'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -58,7 +58,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                class='w-4 text-yellow-500'
+                className='w-4 text-yellow-500'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -75,7 +75,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                class='w-4 text-yellow-500'
+                className='w-4 text-yellow-500'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -92,7 +92,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                class='w-4 text-yellow-500'
+                className='w-4 text-yellow-500'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -109,7 +109,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star-half-alt'
-                class='w-4 text-yellow-500'
+                className='w-4 text-yellow-500'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 536 512'

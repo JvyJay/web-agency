@@ -54,17 +54,17 @@ export default function Footer() {
                   Menu
                 </h6>
                 <p className='mb-4'>
-                  <Link href='/' class='text-gray-600'>
+                  <Link href='/' className='text-gray-600'>
                     Home
                   </Link>
                 </p>
                 <p className='mb-4'>
-                  <Link href='/about' class='text-gray-600'>
+                  <Link href='/about' className='text-gray-600'>
                     About
                   </Link>
                 </p>
                 <p className='mb-4'>
-                  <Link href='/portfolio' class='text-gray-600'>
+                  <Link href='/portfolio' className='text-gray-600'>
                     Portfolio
                   </Link>
                 </p>
@@ -79,11 +79,11 @@ export default function Footer() {
                   Subscribe To Our Newsletter
                 </h6>
 
-                <p class='text-gray-500 mb-4'>
+                <p className='text-gray-500 mb-4'>
                   We will write rarely and only high-quality content.
                 </p>
 
-                <div class='md:flex flex-col'>
+                <div className='md:flex flex-col'>
                   <input
                     type='text'
                     className='form-control block w-full px-4 py-2 mb-2 md:mr-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
@@ -104,10 +104,7 @@ export default function Footer() {
         </div>
         <div className='text-center p-6 bg-gray-200'>
           <span>© 2022 Copyright:</span>
-          <a
-            className='text-gray-600 font-semibold'
-            href='https://tailwind-elements.com/'
-          >
+          <a className='text-gray-600 font-semibold' href='#!'>
             {' '}
             Sandcastle Web Design & Development
           </a>

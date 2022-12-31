@@ -128,7 +128,7 @@ export default function Start() {
             </p>
           </div>
 
-          <div class='container flex justify-center flex-row flex-wrap '>
+          <div className='container-fluid flex justify-center flex-row flex-wrap '>
             {service_data.map((e) => {
               return <ServiceCard key={e.key} img={e.img} title={e.title} />;
             })}
@@ -136,7 +136,7 @@ export default function Start() {
         </section>
 
         {/* PORTFOLIO SECTION*/}
-        <section className='container mx-auto px-4 my-10'>
+        <section className='container-fluid mx-auto px-4 my-10'>
           <div className='flex flex-col justify-center items-center text-center'>
             <h6 className='text-blue-400 font-bold'>Portfolio</h6>
             <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
@@ -148,7 +148,7 @@ export default function Start() {
           </div>
 
           <div className='flex flex-col justify-center text-center items-center'>
-            <div class='flex justify-center flex-row flex-wraps'>
+            <div className='flex justify-center flex-row flex-wrap'>
               {portfolio_data.map((e) => {
                 return (
                   <PortfolioCard key={e.key} img={e.img} title={e.title} />
@@ -159,8 +159,8 @@ export default function Start() {
         </section>
 
         {/* TESTIMONIALS SECTION */}
-        <section className='container mx-auto px-4 my-10'>
-          <div className='flex flex-col justify-start items-start text-lefts my-4 px-8'>
+        <section className='container-fluid mx-auto px-4 my-10'>
+          <div className='flex flex-col justify-center items-center text-lefts my-4 px-8'>
             <h6 className='text-blue-400 font-bold'>Reviews</h6>
             <h2 className='text-2xl font-semibold'>Customer Testimonials</h2>
             <p className='font-light mb-4'>
@@ -169,7 +169,7 @@ export default function Start() {
             </p>
           </div>
 
-          <div className='container mx-auto px-4 flex flex-row justify-center'>
+          <div className='container mx-auto px-4 flex flex-row justify-center flex-wrap'>
             {testimonial_data.map((e) => {
               return <Testimonial key={e.key} img={e.img} name={e.name} />;
             })}
@@ -178,10 +178,10 @@ export default function Start() {
 
         {/* PROJECT INQUIRY SECTION */}
         <section className='my-10'>
-          <div className='container mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
+          <div className='container-fluid mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
             <div className='flex flex-row justify-center items-center'>
               <hr className='w-48 h-1 bg-blue-400 rounded border-0  mx-4'></hr>
-              <h2 class='text-2xl font-semibold font-courgette '>
+              <h2 className='text-2xl font-semibold font-courgette '>
                 Mobile Solution: Targeted. Optimized. Integrated.
               </h2>
               <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>
@@ -196,7 +196,7 @@ export default function Start() {
         </section>
 
         {/* FAQ SECTION */}
-        <section className='container mx-auto px-4 my-10 text-center'>
+        <section className='container-fluid mx-auto px-4 my-10 text-center'>
           <div>
             <h6 className='text-blue-400 font-bold'>FAQ`s</h6>
             <h2 className='text-2xl font-semibold'>
@@ -208,20 +208,20 @@ export default function Start() {
             </p>
           </div>
 
-          <div class='grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8'>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+          <div className='grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> What is a SAAS platform?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -229,25 +229,25 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   SAAS platform is a cloud-based software service that allows
                   users to access and use a variety of tools and functionality.
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> How does billing work?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -255,7 +255,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   We offers a variety of billing options, including monthly and
                   annual subscription plans, as well as pay-as-you-go pricing
                   for certain services. Payment is typically made through a
@@ -263,19 +263,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> Can I get a refund for my subscription?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -283,7 +283,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   We offers a 30-day money-back guarantee for most of its
                   subscription plans. If you are not satisfied with your
                   subscription within the first 30 days, you can request a full
@@ -292,19 +292,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> How do I cancel my subscription?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -312,7 +312,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   To cancel your We subscription, you can log in to your account
                   and navigate to the subscription management page. From there,
                   you should be able to cancel your subscription and stop future
@@ -320,19 +320,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> Can I try this platform for free?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -340,26 +340,26 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   We offers a free trial of its platform for a limited time.
                   During the trial period, you will have access to a limited set
                   of features and functionality, but you will not be charged.
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> How do I access documentation?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -367,7 +367,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   Documentation is available on the company`s website and can be
                   accessed by logging in to your account. The documentation
                   provides detailed information on how to use the , as well as
@@ -375,19 +375,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> How do I contact support?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -395,7 +395,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   If you need help with the platform or have any other
                   questions, you can contact the company`s support team by
                   submitting a support request through the website or by
@@ -403,19 +403,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> Do you offer any discounts or promotions?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -423,7 +423,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   We may offer discounts or promotions from time to time. To
                   stay up-to-date on the latest deals and special offers, you
                   can sign up for the company`s newsletter or follow it on
@@ -431,19 +431,19 @@ export default function Start() {
                 </p>
               </details>
             </div>
-            <div class='py-5'>
-              <details class='group'>
-                <summary class='flex justify-between items-center font-medium cursor-pointer list-none'>
+            <div className='py-5'>
+              <details className='group'>
+                <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
                   <span> How do we compare to other similar services?</span>
-                  <span class='transition group-open:rotate-180'>
+                  <span className='transition group-open:rotate-180'>
                     <svg
                       fill='none'
                       height='24'
-                      shape-rendering='geometricPrecision'
+                      shapeRendering='geometricPrecision'
                       stroke='currentColor'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1.5'
                       viewBox='0 0 24 24'
                       width='24'
                     >
@@ -451,7 +451,7 @@ export default function Start() {
                     </svg>
                   </span>
                 </summary>
-                <p class='text-neutral-600 mt-3 group-open:animate-fadeIn'>
+                <p className='text-neutral-600 mt-3 group-open:animate-fadeIn'>
                   This platform is a highly reliable and feature-rich service
                   that offers a wide range of tools and functionality. It is
                   competitively priced and offers a variety of billing options

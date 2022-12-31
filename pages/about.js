@@ -49,9 +49,9 @@ export default function about() {
       <Nav />
       <main>
         {/* TEAM SECTION */}
-        <section className='text-center my-10 px-4 container mx-auto'>
-          <h1 class='text-3xl font-bold'>Our Team</h1>
-          <div class='grid md:grid-cols-3 gap-6 xl:gap-x-12'>
+        <section className='text-center my-10 px-4 container-fluid mx-auto flex flex-row flex-wrap justify-center'>
+          <h1 className='text-3xl font-bold'>Our Team</h1>
+          <div className='grid md:grid-cols-3 gap-6 xl:gap-x-12'>
             {team_data.map((e) => {
               return (
                 <TeamMember
@@ -70,10 +70,10 @@ export default function about() {
 
         {/* PROJECT INQUIRY SECTION */}
         <section className='mt-10'>
-          <div className='container mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
+          <div className='container-fluid mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
             <div className='flex flex-row justify-center items-center'>
               <hr className='w-48 h-1 bg-blue-400 rounded border-0  mx-4'></hr>
-              <h2 class='text-2xl font-semibold font-courgette '>
+              <h2 className='text-2xl font-semibold font-courgette '>
                 Is Your Current Developer Letting You Down?
               </h2>
               <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>

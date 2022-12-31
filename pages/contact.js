@@ -23,10 +23,12 @@ export default function contact() {
       <Nav />
       <main className='flex justify-center'>
         {/* CONTACT FORM SECTION */}
-        <div class='p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-row justify-between my-10'>
+        <div className='container-fluid p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-row justify-between my-10'>
           <div className='flex flex-col justify-between flex-start'>
             <div className='p-6'>
-              <h1 class='text-3xl font-bold mb-5'>Now Start Your Project</h1>
+              <h1 className='text-3xl font-bold mb-5'>
+                Now Start Your Project
+              </h1>
               <p className='mb-5'>
                 Id deserunt cillum nostrud incididunt laboris amet quis.
               </p>
@@ -69,10 +71,10 @@ export default function contact() {
             </ul>
           </div>
           <form>
-            <div class='form-group mb-6'>
+            <div className='form-group mb-6'>
               <input
                 type='text'
-                class='form-control block
+                className='form-control block
         w-full
         px-3
         py-1.5
@@ -90,10 +92,10 @@ export default function contact() {
                 placeholder='Name'
               />
             </div>
-            <div class='form-group mb-6'>
+            <div className='form-group mb-6'>
               <input
                 type='email'
-                class='form-control block
+                className='form-control block
         w-full
         px-3
         py-1.5
@@ -111,45 +113,45 @@ export default function contact() {
                 placeholder='Email address'
               />
             </div>
-            <div class='form-group mb-6'>
-              <div class='flex justify-start'>
-                <div class='form-check form-check-inline mx-2'>
+            <div className='form-group mb-6'>
+              <div className='flex justify-start'>
+                <div className='form-check form-check-inline mx-2'>
                   <input
-                    class='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox1'
                     value='option1'
                   />
                   <label
-                    class='form-check-label inline-block text-gray-800'
+                    className='form-check-label inline-block text-gray-800'
                     for='inlineCheckbox1'
                   >
                     Webflow
                   </label>
                 </div>
-                <div class='form-check form-check-inline mx-2'>
+                <div className='form-check form-check-inline mx-2'>
                   <input
-                    class='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox2'
                     value='option2'
                   />
                   <label
-                    class='form-check-label inline-block text-gray-800'
+                    className='form-check-label inline-block text-gray-800'
                     for='inlineCheckbox2'
                   >
                     UI/UX Design
                   </label>
                 </div>
-                <div class='form-check form-check-inline mx-2'>
+                <div className='form-check form-check-inline mx-2'>
                   <input
-                    class='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox2'
                     value='option2'
                   />
                   <label
-                    class='form-check-label inline-block text-gray-800'
+                    className='form-check-label inline-block text-gray-800'
                     for='inlineCheckbox2'
                   >
                     SEO
@@ -157,9 +159,9 @@ export default function contact() {
                 </div>
               </div>
             </div>
-            <div class='form-group mb-6'>
+            <div className='form-group mb-6'>
               <textarea
-                class='
+                className='
         form-control
         block
         w-full
@@ -183,11 +185,11 @@ export default function contact() {
             </div>
             <button
               type='submit'
-              class='
+              className='
       w-full
       px-6
       py-2.5
-      bg-blue-600
+      bg-blue-400
       text-white
       font-medium
       text-xs
@@ -195,9 +197,9 @@ export default function contact() {
       uppercase
       rounded
       shadow-md
-      hover:bg-blue-700 hover:shadow-lg
-      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg
+      hover:bg-blue-500 hover:shadow-lg
+      focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-600 active:shadow-lg
       transition
       duration-150
       ease-in-out'
