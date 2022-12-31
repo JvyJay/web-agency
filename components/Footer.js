@@ -19,9 +19,9 @@ export default function Footer() {
       <footer className='text-center lg:text-left bg-gray-100 text-gray-600'>
         {/* <div className='flex justify-start items-start p-6 border-b border-gray-300'></div> */}
         <div className='mx-6 py-10 text-center md:text-left'>
-          <div className='flex flex-row justify-between'>
+          <div className='flex lg:flex-row lg:justify-between flex-col justify-center'>
             <div
-              className='flex items-start flex-col  mt-2 lg:mt-0 mr-1'
+              className='flex items-center lg:items-start flex-col  mt-2 lg:mt-0 mr-1'
               href='#'
             >
               <Image src={img} alt='Logo' />
@@ -48,7 +48,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className='flex flex-column gap-4'>
+            <div className='flex gap-4 justify-center items-center lg:justify-start lg:items-start'>
               <div>
                 <h6 className='uppercase font-semibold mb-4 flex justify-center md:justify-start'>
                   Menu
@@ -75,7 +75,7 @@ export default function Footer() {
                 </p>
               </div>
               <div>
-                <h6 className='uppercase font-semibold mb-4 flex justify-center md:justify-start'>
+                <h6 className='uppercase font-semibold mb-4 flex justify-center lg:justify-start'>
                   Subscribe To Our Newsletter
                 </h6>
 

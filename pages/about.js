@@ -1,4 +1,4 @@
-import Nav from '../components/Nav';
+import Navbar from '../components/Navbar';
 import styles from '../styles/Start.module.css';
 
 // Components
@@ -46,7 +46,7 @@ const team_data = [
 export default function about() {
   return (
     <div className='font-montserrat text-neutral-800'>
-      <Nav />
+      <Navbar />
       <main>
         {/* TEAM SECTION */}
         <section className='text-center my-10 px-4 container-fluid mx-auto flex flex-row flex-wrap justify-center'>

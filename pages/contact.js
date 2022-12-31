@@ -1,4 +1,4 @@
-import Nav from '../components/Nav';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import styles from '../styles/Start.module.css';
 import Image from 'next/image';
@@ -20,7 +20,7 @@ import youtube from '../assets/youtube.svg';
 export default function contact() {
   return (
     <div className='font-montserrat text-neutral-800'>
-      <Nav />
+      <Navbar />
       <main className='flex justify-center'>
         {/* CONTACT FORM SECTION */}
         <div className='container-fluid p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-row justify-between my-10'>
