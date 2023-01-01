@@ -1,12 +1,12 @@
-import Navbar from '../components/Navbar';
 import styles from '../styles/Start.module.css';
 
-// Components
+// COMPONENTS
+import Navbar from '../components/Navbar';
+import TeamMember from '../components/TeamMember';
 import ProjectInquiry from '../components/ProjectInquiry';
 import Footer from '../components/Footer';
-import TeamMember from '../components/TeamMember';
 
-// Images
+// IMAGES
 import david_img from '../assets/david.jpg';
 import ashlee_img from '../assets/ashlee.jpg';
 import brandon_img from '../assets/brandon.jpg';
@@ -49,34 +49,37 @@ export default function about() {
       <Navbar />
       <main>
         {/* TEAM SECTION */}
-        <section className='text-center my-10 px-4 container-fluid mx-auto flex flex-row flex-wrap justify-center'>
-          <h1 className='text-3xl font-bold'>Our Team</h1>
-          <div className='grid md:grid-cols-3 gap-6 xl:gap-x-12'>
-            {team_data.map((e) => {
-              return (
-                <TeamMember
-                  key={e.key}
-                  name={e.name}
-                  img={e.img}
-                  position={e.position}
-                  desc={e.desc}
-                  email={e.email}
-                  linkedin={e.linkedin}
-                />
-              );
-            })}
+        <section>
+          <div className='text-center py-10 container-fluid mx-auto'>
+            <h1 className='text-3xl font-bold'>Our Team</h1>
+            <div className='flex flex-row flex-wrap justify-center my-10'>
+              {team_data.map((e) => {
+                return (
+                  <TeamMember
+                    key={e.key}
+                    name={e.name}
+                    img={e.img}
+                    position={e.position}
+                    desc={e.desc}
+                    email={e.email}
+                    linkedin={e.linkedin}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
+        {/* TEAM SECTION */}
 
         {/* PROJECT INQUIRY SECTION */}
-        <section className='mt-10'>
-          <div className='container-fluid mx-auto px-4 flex flex-col justify-center items-center text-center text-blue-400'>
+        <section>
+          <div className='container-fluid py-10 mx-auto flex flex-col justify-center items-center text-center text-primary'>
             <div className='flex flex-row justify-center items-center'>
-              <hr className='w-48 h-1 bg-blue-400 rounded border-0  mx-4'></hr>
+              <hr className='md:w-48 h-1 bg-primary rounded border-0  mx-4'></hr>
               <h2 className='text-2xl font-semibold font-courgette '>
                 Is Your Current Developer Letting You Down?
               </h2>
-              <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>
+              <hr className='md:w-48 h-1 bg-primary rounded border-0 mx-4'></hr>
             </div>
             <p className='mb-4'>
               Aliquip cillum culpa cupidatat officia id do commodo mollit id
@@ -86,6 +89,7 @@ export default function about() {
 
           <ProjectInquiry />
         </section>
+        {/* PROJECT INQUIRY SECTION */}
       </main>
       <Footer />
     </div>

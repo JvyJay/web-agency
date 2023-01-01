@@ -1,7 +1,13 @@
+import styles from '../styles/Start.module.css';
+
+// NEXT COMPONENTS
+import Image from 'next/image';
+// NEXT COMPONENTS
+
+// COMPONENTS
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import styles from '../styles/Start.module.css';
-import Image from 'next/image';
+// COMPONENTS
 
 // ICONS
 import icon1 from '../assets/phone.svg';
@@ -21,9 +27,9 @@ export default function contact() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />
-      <main className='flex justify-center'>
+      <main className='flex justify-center bg-bg'>
         {/* CONTACT FORM SECTION */}
-        <div className='container-fluid p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-row justify-between my-10'>
+        <div className='container-fluid p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-col justify-center md:flex-row md:justify-between my-10'>
           <div className='flex flex-col justify-between flex-start'>
             <div className='p-6'>
               <h1 className='text-3xl font-bold mb-5'>
@@ -117,7 +123,7 @@ export default function contact() {
               <div className='flex justify-start'>
                 <div className='form-check form-check-inline mx-2'>
                   <input
-                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox1'
                     value='option1'
@@ -131,7 +137,7 @@ export default function contact() {
                 </div>
                 <div className='form-check form-check-inline mx-2'>
                   <input
-                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox2'
                     value='option2'
@@ -145,7 +151,7 @@ export default function contact() {
                 </div>
                 <div className='form-check form-check-inline mx-2'>
                   <input
-                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
+                    className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer'
                     type='checkbox'
                     id='inlineCheckbox2'
                     value='option2'
@@ -189,7 +195,7 @@ export default function contact() {
       w-full
       px-6
       py-2.5
-      bg-blue-400
+      bg-primary
       text-white
       font-medium
       text-xs
@@ -197,9 +203,6 @@ export default function contact() {
       uppercase
       rounded
       shadow-md
-      hover:bg-blue-500 hover:shadow-lg
-      focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-600 active:shadow-lg
       transition
       duration-150
       ease-in-out'
@@ -207,6 +210,7 @@ export default function contact() {
               Send
             </button>
           </form>
+          {/* CONTACT FORM SECTION */}
         </div>
       </main>
       <Footer />

@@ -1,18 +1,19 @@
-import Navbar from '../components/Navbar';
 import styles from '../styles/Start.module.css';
 
 // Components
+import Navbar from '../components/Navbar';
 import PortfolioCard from '../components/PortfolioCard';
 import ProjectInquiry from '../components/ProjectInquiry';
 import Footer from '../components/Footer';
 // Components
 
-// Images
+// IMAGES
 import portfolio1 from '../assets/medical-webdesign.png';
 import portfolio2 from '../assets/cryptocurrency-webdesign.png';
 import portfolio3 from '../assets/bitcoin-investment-design.jpg';
 import portfolio4 from '../assets/home-investment-webdesign.avif';
 import portfolio5 from '../assets/dental-webdesign.png';
+// IMAGES
 
 const portfolio_data = [
   { img: portfolio1, title: 'Medical Website', key: 0 },
@@ -40,41 +41,48 @@ export default function portfolio() {
       <Navbar />
       <main>
         {/* PORTFOLIO SECTION*/}
-        <section className='text-center my-10 px-4 container-fluid mx-auto'>
-          <div className='flex flex-col items-center justify-center mb-5'>
-            <h6 className='text-blue-400 font-bold'>Portfolio</h6>
-            <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
-            <p className='w-3/6 font-light mb-4'>
-              Aliquip cillum culpa cupidatat officia id do commodo mollit id
-              cillum elit anim excepteur. Duis magna elit voluptate consequat
-              incididunt nostrud fugiat elit in nulla consectetur deserunt ex.
-            </p>
-          </div>
-          <div className='flex justify-center flex-row flex-wrap mx-auto'>
-            {portfolio_data.map((e) => {
-              return <PortfolioCard key={e.key} img={e.img} title={e.title} />;
-            })}
+        <section>
+          <div className='bg-bg text-center py-10 container-fluid mx-auto'>
+            <div className='flex flex-col items-center justify-center mb-5'>
+              <h6 className='text-primary font-bold'>Portfolio</h6>
+              <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
+              <p className='w-3/6 font-light mb-4'>
+                Aliquip cillum culpa cupidatat officia id do commodo mollit id
+                cillum elit anim excepteur. Duis magna elit voluptate consequat
+                incididunt nostrud fugiat elit in nulla consectetur deserunt ex.
+              </p>
+            </div>
+            <div className='flex justify-center flex-row flex-wrap mx-auto'>
+              {portfolio_data.map((e) => {
+                return (
+                  <PortfolioCard key={e.key} img={e.img} title={e.title} />
+                );
+              })}
+            </div>
           </div>
         </section>
+        {/* PORTFOLIO SECTION*/}
 
         {/* PROJECT INQUIRY SECTION */}
-        <section className='mt-10 mx-auto container-fluid'>
-          <div className='px-4 flex flex-col justify-center items-center text-center text-blue-400'>
-            <div className='flex flex-row justify-center items-center'>
-              <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>
-              <h2 className='text-2xl font-semibold font-courgette'>
-                Creative People. Custom Designs. Great Results.
-              </h2>
-              <hr className='w-48 h-1 bg-blue-400 rounded border-0 mx-4'></hr>
+        <section>
+          <div className='container-fluid'>
+            <div className='py-10 mx-auto flex flex-col justify-center items-center text-center text-primary'>
+              <div className='flex flex-row justify-center items-center'>
+                <hr className='md:w-48 h-1 bg-primary rounded border-0 mx-4'></hr>
+                <h2 className='text-2xl font-semibold font-courgette'>
+                  Creative People. Custom Designs. Great Results.
+                </h2>
+                <hr className='md:w-48 h-1 bg-primary rounded border-0 mx-4'></hr>
+              </div>
+              <p className='mb-4'>
+                Aliquip cillum culpa cupidatat officia id do commodo mollit id
+                cillum elit anim excepteur.
+              </p>
             </div>
-            <p className='mb-4'>
-              Aliquip cillum culpa cupidatat officia id do commodo mollit id
-              cillum elit anim excepteur.
-            </p>
+            <ProjectInquiry />
           </div>
-
-          <ProjectInquiry />
         </section>
+        {/* PROJECT INQUIRY SECTION */}
       </main>
       <Footer />
     </div>

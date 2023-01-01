@@ -3,12 +3,9 @@ import Image from 'next/image';
 
 export default function Testimonial(props) {
   return (
-    <div className='px-4 my-10'>
+    <div className='px-4 my-5'>
       <div className='block rounded-lg shadow-lg bg-white'>
-        <div
-          className='overflow-hidden rounded-t-lg h-28'
-          style={{ backgroundColor: '#9d789b' }}
-        ></div>
+        <div className='overflow-hidden rounded-t-lg h-28 bg-secondary'></div>
         <div className='w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white'>
           <Image src={props.img} alt='Avatar' />
         </div>
@@ -41,7 +38,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                className='w-4 text-yellow-500'
+                className='w-4 text-secondary'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -58,7 +55,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                className='w-4 text-yellow-500'
+                className='w-4 text-secondary'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -75,7 +72,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                className='w-4 text-yellow-500'
+                className='w-4 text-secondary'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -92,7 +89,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star'
-                className='w-4 text-yellow-500'
+                className='w-4 text-secondary'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 576 512'
@@ -109,7 +106,7 @@ export default function Testimonial(props) {
                 focusable='false'
                 data-prefix='fas'
                 data-icon='star-half-alt'
-                className='w-4 text-yellow-500'
+                className='w-4 text-secondary'
                 role='img'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 536 512'

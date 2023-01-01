@@ -18,13 +18,13 @@ export default function NavBar() {
             </Link>
             <div className='md:hidden'>
               <button
-                className='p-2 text-blue-400 rounded-md outline-none focus:border-blue-400 focus:border'
+                className='p-2 text-primary rounded-md outline-none focus:border-primary focus:border'
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    className='w-6 h-6 text-blue-400'
+                    className='w-6 h-6 text-primary'
                     viewBox='0 0 20 20'
                     fill='currentColor'
                   >
@@ -37,7 +37,7 @@ export default function NavBar() {
                 ) : (
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    className='w-6 h-6 text-blue-400'
+                    className='w-6 h-6 text-primary'
                     fill='none'
                     viewBox='0 0 24 24'
                     stroke='currentColor'
@@ -60,23 +60,23 @@ export default function NavBar() {
               navbar ? 'block' : 'hidden'
             }`}
           >
-            <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
-              <li className='nav-item pr-5 hover:text-blue-500 focus:text-blue-500'>
+            <ul className='items-center justify-center space-y-4 md:flex md:space-x-0 md:space-y-0'>
+              <li className='nav-item pr-5 hover:text-primary focus:text-primary'>
                 <Link href='/'>Home{'    '}</Link>
               </li>
-              <li className='pr-5 hover:text-blue-500 focus:text-blue-500'>
+              <li className='pr-5 hover:text-primary focus:text-primary'>
                 <Link href='/about'>About{'    '}</Link>
               </li>
-              <li className='pr-5 hover:text-blue-500 focus:text-blue-500'>
+              <li className='pr-5 hover:text-primary focus:text-primary'>
                 <Link href='/portfolio'>Portfolio{'    '}</Link>
               </li>
-              <li className='pr-5 hover:text-blue-500 focus:text-blue-500'>
+              <li className='pr-5 hover:text-primary focus:text-primary'>
                 <Link href='/contact'>Let`s Get Started{'    '}</Link>
               </li>
               <li className='nav-item'>
                 <button
                   type='button'
-                  className='inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out'
+                  className='inline-block px-6 py-2.5 bg-primary text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-500 active:shadow-lg transition duration-150 ease-in-out'
                 >
                   Contact
                 </button>

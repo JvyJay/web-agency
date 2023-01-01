@@ -16,9 +16,9 @@ import youtube from '../assets/youtube.svg';
 export default function Footer() {
   return (
     <div>
-      <footer className='text-center lg:text-left bg-gray-100 text-gray-600'>
+      <footer className='text-center lg:text-left bg-gray-100 text-gray-600 container-fluid mx-auto'>
         {/* <div className='flex justify-start items-start p-6 border-b border-gray-300'></div> */}
-        <div className='mx-6 py-10 text-center md:text-left'>
+        <div className='mx-auto p-20 text-center md:text-left md:px-8 lg:max-w-7xl'>
           <div className='flex lg:flex-row lg:justify-between flex-col justify-center'>
             <div
               className='flex items-center lg:items-start flex-col  mt-2 lg:mt-0 mr-1'
@@ -83,15 +83,15 @@ export default function Footer() {
                   We will write rarely and only high-quality content.
                 </p>
 
-                <div className='md:flex flex-col'>
+                <div className='flex justify-start flex-col'>
                   <input
                     type='text'
-                    className='form-control block w-full px-4 py-2 mb-2 md:mr-2 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+                    className='form-control block w-full px-4 py-2 mb-2 md:mr-2 font-normal text-white bg-dark bg-clip-padding border border-solid border-dark rounded transition ease-in-out m-0 focus:outline-none'
                     placeholder='Enter your email'
                   />
                   <button
                     type='submit'
-                    className='inline-block px-7 py-3 bg-blue-400 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out'
+                    className='inline-block px-7 py-3 bg-primary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out'
                     data-mdb-ripple='true'
                     data-mdb-ripple-color='light'
                   >
@@ -102,7 +102,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='text-center p-6 bg-gray-200'>
+        <div className='text-center text-white py-6 bg-dark'>
           <span>© 2022 Copyright:</span>
           <a className='text-gray-600 font-semibold' href='#!'>
             {' '}
