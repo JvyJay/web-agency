@@ -1,4 +1,5 @@
 import styles from '../styles/Start.module.css';
+import { useForm } from 'react-hook-form';
 
 // NEXT COMPONENTS
 import Image from 'next/image';
@@ -24,6 +25,12 @@ import youtube from '../assets/youtube.svg';
 // IMAGES
 
 export default function contact() {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />
@@ -76,9 +83,11 @@ export default function contact() {
               </li>
             </ul>
           </div>
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className='form-group mb-6'>
               <input
+                {...register('name', { required: true })}
+                aria-invalid={errors.name ? 'true' : 'false'}
                 type='text'
                 className='form-control block
         w-full
@@ -97,9 +106,16 @@ export default function contact() {
                 id='exampleInput7'
                 placeholder='Name'
               />
+              {errors.name?.type === 'required' && (
+                <p className='text-rose' role='alert'>
+                  Name is Required
+                </p>
+              )}
             </div>
             <div className='form-group mb-6'>
               <input
+                {...register('email', { required: 'Valid Email is required' })}
+                aria-invalid={errors.email ? 'true' : 'false'}
                 type='email'
                 className='form-control block
         w-full
@@ -118,6 +134,11 @@ export default function contact() {
                 id='exampleInput8'
                 placeholder='Email address'
               />
+              {errors.email && (
+                <p className='text-rose' role='alert'>
+                  {errors.email?.message}
+                </p>
+              )}
             </div>
             <div className='form-group mb-6'>
               <div className='flex justify-start'>
@@ -167,6 +188,8 @@ export default function contact() {
             </div>
             <div className='form-group mb-6'>
               <textarea
+                {...register('message', { required: true })}
+                aria-invalid={errors.message ? 'true' : 'false'}
                 className='
         form-control
         block
@@ -188,6 +211,11 @@ export default function contact() {
                 rows='3'
                 placeholder='Message'
               ></textarea>
+              {errors.message?.type === 'required' && (
+                <p className='text-rose' role='alert'>
+                  Message is Required
+                </p>
+              )}
             </div>
             <button
               type='submit'

@@ -39,7 +39,7 @@ export default function portfolio() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />
-      <main>
+      <main className='bg-bg'>
         {/* PORTFOLIO SECTION*/}
         <section>
           <div className='bg-bg text-center py-10 container-fluid mx-auto'>

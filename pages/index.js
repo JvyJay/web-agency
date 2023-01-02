@@ -74,7 +74,7 @@ export default function Start() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <main>
+      <main className='bg-bg'>
         {/* HERO AREA */}
         <section>
           <div className='relative h-screen h-full h-auto overflow-hidden'>
@@ -113,7 +113,7 @@ export default function Start() {
 
         {/* SERVICES SECTION */}
         <section>
-          <div className='container-fluid mx-auto py-10 bg-bg'>
+          <div className='container-fluid mx-auto py-10'>
             <div className='flex flex-col justify-center items-center text-center'>
               <h6 className='text-primary font-bold'>Services</h6>
               <h2 className='text-2xl font-semibold'>
@@ -204,7 +204,7 @@ export default function Start() {
 
         {/* FAQ SECTION */}
         <section>
-          <div className='container-fluid mx-auto py-10 text-center bg-bg'>
+          <div className='container-fluid mx-auto py-10 text-center'>
             <div>
               <h6 className='text-primary font-bold'>FAQ`s</h6>
               <h2 className='text-2xl font-semibold'>

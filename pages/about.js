@@ -47,7 +47,7 @@ export default function about() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />
-      <main>
+      <main className='bg-bg'>
         {/* TEAM SECTION */}
         <section>
           <div className='text-center py-10 container-fluid mx-auto'>

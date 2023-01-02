@@ -13,6 +13,7 @@ module.exports = {
       bg: '#F2FAFF',
       white: '#FFFFFF',
       dark: '#333333',
+      rose: '#b91c1c',
     },
     extend: {
       fontFamily: {
