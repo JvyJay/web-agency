@@ -1,4 +1,5 @@
 import styles from '../styles/Start.module.css';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 // COMPONENTS
 import Navbar from '../components/Navbar';
@@ -51,44 +52,50 @@ export default function about() {
         {/* TEAM SECTION */}
         <section>
           <div className='text-center py-10 container-fluid mx-auto'>
-            <h1 className='text-3xl font-bold'>Our Team</h1>
-            <div className='flex flex-row flex-wrap justify-center my-10'>
-              {team_data.map((e) => {
-                return (
-                  <TeamMember
-                    key={e.key}
-                    name={e.name}
-                    img={e.img}
-                    position={e.position}
-                    desc={e.desc}
-                    email={e.email}
-                    linkedin={e.linkedin}
-                  />
-                );
-              })}
-            </div>
+            <Fade>
+              <h1 className='text-3xl font-bold'>Our Team</h1>
+            </Fade>
+            <Slide direction='left'>
+              <div className='flex flex-row flex-wrap justify-center my-10'>
+                {team_data.map((e) => {
+                  return (
+                    <TeamMember
+                      key={e.key}
+                      name={e.name}
+                      img={e.img}
+                      position={e.position}
+                      desc={e.desc}
+                      email={e.email}
+                      linkedin={e.linkedin}
+                    />
+                  );
+                })}
+              </div>
+            </Slide>
           </div>
         </section>
         {/* TEAM SECTION */}
 
         {/* PROJECT INQUIRY SECTION */}
-        <section>
-          <div className='container-fluid py-10 mx-auto flex flex-col justify-center items-center text-center text-primary'>
-            <div className='flex flex-row justify-center items-center'>
-              <hr className='md:w-48 h-1 bg-primary rounded border-0  mx-4'></hr>
-              <h2 className='text-2xl font-semibold font-courgette '>
-                Is Your Current Developer Letting You Down?
-              </h2>
-              <hr className='md:w-48 h-1 bg-primary rounded border-0 mx-4'></hr>
+        <Fade>
+          <section>
+            <div className='container-fluid py-10 mx-auto flex flex-col justify-center items-center text-center text-primary'>
+              <div className='flex flex-row justify-center items-center'>
+                <hr className='md:w-48 h-1 bg-primary rounded border-0  mx-4'></hr>
+                <h2 className='text-2xl font-semibold font-courgette '>
+                  Is Your Current Developer Letting You Down?
+                </h2>
+                <hr className='md:w-48 h-1 bg-primary rounded border-0 mx-4'></hr>
+              </div>
+              <p className='mb-4'>
+                Aliquip cillum culpa cupidatat officia id do commodo mollit id
+                cillum elit anim excepteur.
+              </p>
             </div>
-            <p className='mb-4'>
-              Aliquip cillum culpa cupidatat officia id do commodo mollit id
-              cillum elit anim excepteur.
-            </p>
-          </div>
 
-          <ProjectInquiry />
-        </section>
+            <ProjectInquiry />
+          </section>
+        </Fade>
         {/* PROJECT INQUIRY SECTION */}
       </main>
       <Footer />
