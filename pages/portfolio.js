@@ -36,7 +36,7 @@ const portfolio_data = [
   { img: portfolio5, title: 'Dental Website', key: 4 },
 ];
 
-export default function portfolio() {
+export default function Portfolio() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />

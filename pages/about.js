@@ -44,7 +44,7 @@ const team_data = [
   },
 ];
 
-export default function about() {
+export default function About() {
   return (
     <div className='font-montserrat text-neutral-800'>
       <Navbar />

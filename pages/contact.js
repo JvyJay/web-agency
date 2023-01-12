@@ -24,7 +24,7 @@ import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
 // IMAGES
 
-export default function contact() {
+export default function Contact() {
   const {
     register,
     formState: { errors },
