@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 // IMAGES
 import img from '../assets/logo_header.png';
-// import linkedin from '../assets/linkedinTwo.svg';
+import linkedin from '../assets/linkedinTwo.svg';
 import behance from '../assets/behance.svg';
 import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
@@ -26,11 +26,11 @@ export default function Footer() {
             >
               <Image src={img} alt='Logo' />
               <ul className='flex flex-row my-6'>
-                {/* <li className='mr-2'>
+                <li className='mr-2'>
                   <a>
                     <Image src={linkedin} alt='LinkedIn' />
                   </a>
-                </li> */}
+                </li>
                 <li className='mr-2'>
                   <a>
                     <Image src={behance} alt='Behance' />

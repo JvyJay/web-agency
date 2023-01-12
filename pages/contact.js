@@ -18,7 +18,7 @@ import icon3 from '../assets/location.svg';
 // ICONS
 
 // IMAGES
-// import linkedin from '../assets/linkedinTwo.svg';
+import linkedin from '../assets/linkedinTwo.svg';
 import behance from '../assets/behance.svg';
 import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
@@ -62,11 +62,11 @@ export default function Contact() {
                 </ul>
               </div>
               <ul className='flex flex-row p-6'>
-                {/* <li className='mr-2'>
+                <li className='mr-2'>
                   <a>
                     <Image src={linkedin} alt='LinkedIn' />
                   </a>
-                </li> */}
+                </li>
                 <li className='mr-2'>
                   <a>
                     <Image src={behance} alt='Behance' />
