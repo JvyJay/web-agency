@@ -1,6 +1,6 @@
 // REACT
 import React from 'react';
-import { Fade, Slide, Rotate } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 // NEXT COMPONENTS
 import Head from 'next/head';
@@ -152,7 +152,7 @@ export default function Start() {
         {/* PORTFOLIO SECTION*/}
         <section>
           <div className='container-fluid mx-auto py-10'>
-            <Fade>
+            <Slide direction='right'>
               <div className='flex flex-col justify-center items-center text-center'>
                 <h6 className='text-primary font-bold'>Portfolio</h6>
                 <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
@@ -163,9 +163,9 @@ export default function Start() {
                   deserunt ex.
                 </p>
               </div>
-            </Fade>
+            </Slide>
 
-            <Slide direction='right'>
+            <Slide direction='left'>
               <div className='flex flex-col justify-center text-center items-center'>
                 <div className='flex justify-center flex-row flex-wrap'>
                   {portfolio_data.map((e) => {
@@ -196,13 +196,13 @@ export default function Start() {
               </div>
             </Fade>
 
-            <Rotate>
+            <Fade>
               <div className='mx-auto px-4 flex flex-row justify-center flex-wrap'>
                 {testimonial_data.map((e) => {
                   return <Testimonial key={e.key} img={e.img} name={e.name} />;
                 })}
               </div>
-            </Rotate>
+            </Fade>
           </div>
         </section>
         {/* TESTIMONIALS SECTION */}
@@ -232,7 +232,7 @@ export default function Start() {
         {/* FAQ SECTION */}
         <Slide direction='left'>
           <section>
-            <div className='container-fluid mx-auto py-10 text-center'>
+            <div className='container-fluid mx-auto py-10 text-center md:m-10'>
               <div>
                 <h6 className='text-primary font-bold'>FAQ`s</h6>
                 <h2 className='text-2xl font-semibold'>

@@ -38,7 +38,7 @@ export default function Contact() {
         <main className='flex justify-center bg-bg'>
           {/* CONTACT FORM SECTION */}
           <div className='container-fluid p-6 rounded-lg shadow-lg bg-white w-4/6 flex flex-col justify-center md:flex-row md:justify-between my-10'>
-            <div className='flex flex-col justify-between flex-start'>
+            <div className='flex flex-col justify-between flex-start justify-center'>
               <div className='p-6'>
                 <h1 className='text-3xl font-bold mb-5'>
                   Now Start Your Project
