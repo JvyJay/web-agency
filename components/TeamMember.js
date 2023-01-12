@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 // IMAGES
 import email from '../assets/paper-plane.png';
-import linkedin from '../assets/Linkedin2.svg';
+import linkedin from '../assets/LinkedinTwo.svg';
 
 export default function TeamMember(props) {
   return (
