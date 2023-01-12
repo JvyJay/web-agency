@@ -18,7 +18,7 @@ import icon3 from '../assets/location.svg';
 // ICONS
 
 // IMAGES
-import linkedin from '../assets/linkedin2.svg';
+import linkedin from '../assets/linkedinTwo.svg';
 import behance from '../assets/behance.svg';
 import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
