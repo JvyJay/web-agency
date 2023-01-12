@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 // IMAGES
 import img from '../assets/logo_header.png';
-import linkedin from '../assets/linkedinTwo.svg';
+import linkedin from '../assets/linkedin2.svg';
 import behance from '../assets/behance.svg';
 import twitter from '../assets/twitter.svg';
 import youtube from '../assets/youtube.svg';
