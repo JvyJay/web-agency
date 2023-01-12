@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 // IMAGES
 import email from '../assets/paper-plane.png';
-import linkedin from '../assets/LinkedinTwo.svg';
+// import linkedin from '../assets/LinkedinTwo.svg';
 
 export default function TeamMember(props) {
   return (
@@ -25,9 +25,9 @@ export default function TeamMember(props) {
               <a href={props.email} className='px-2'>
                 <Image width='15' src={email} alt='Email' />
               </a>
-              <a href={props.linkedin} className='px-2'>
+              {/* <a href={props.linkedin} className='px-2'>
                 <Image src={linkedin} alt='Linkedin' />
-              </a>
+              </a> */}
             </ul>
           </div>
         </div>
