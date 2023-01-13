@@ -136,7 +136,7 @@ export default function Start() {
               </div>
             </Fade>
 
-            <Slide direction='left'>
+            <Fade>
               <div className='container-fluid flex justify-center flex-row flex-wrap '>
                 {service_data.map((e) => {
                   return (
@@ -144,7 +144,7 @@ export default function Start() {
                   );
                 })}
               </div>
-            </Slide>
+            </Fade>
           </div>
         </section>
         {/* SERVICES SECTION */}
@@ -152,7 +152,7 @@ export default function Start() {
         {/* PORTFOLIO SECTION*/}
         <section>
           <div className='container-fluid mx-auto py-10'>
-            <Slide direction='right'>
+            <Fade>
               <div className='flex flex-col justify-center items-center text-center'>
                 <h6 className='text-primary font-bold'>Portfolio</h6>
                 <h2 className='text-2xl font-semibold'>Our Recent Works</h2>
@@ -163,9 +163,9 @@ export default function Start() {
                   deserunt ex.
                 </p>
               </div>
-            </Slide>
+            </Fade>
 
-            <Slide direction='left'>
+            <Fade>
               <div className='flex flex-col justify-center text-center items-center'>
                 <div className='flex justify-center flex-row flex-wrap'>
                   {portfolio_data.map((e) => {
@@ -175,7 +175,7 @@ export default function Start() {
                   })}
                 </div>
               </div>
-            </Slide>
+            </Fade>
           </div>
         </section>
         {/* PORTFOLIO SECTION*/}
@@ -230,9 +230,9 @@ export default function Start() {
         {/* PROJECT INQUIRY SECTION */}
 
         {/* FAQ SECTION */}
-        <Slide direction='left'>
+        <Fade>
           <section>
-            <div className='container-fluid mx-auto py-10 text-center md:m-10'>
+            <div className='container-fluid mx-auto py-10 text-center w-4/5'>
               <div>
                 <h6 className='text-primary font-bold'>FAQ`s</h6>
                 <h2 className='text-2xl font-semibold'>
@@ -503,7 +503,7 @@ export default function Start() {
               </div>
             </div>
           </section>
-        </Slide>
+        </Fade>
         {/* FAQ SECTION */}
       </main>
       <Footer />
